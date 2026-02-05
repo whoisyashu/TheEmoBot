@@ -1,0 +1,850 @@
+{
+  "apart": [
+    "emote-apart",
+    4.809542
+  ],
+  "astronaut": [
+    "emote-astronaut",
+    13.791175
+  ],
+  "attention": [
+    "emote-attention",
+    4.401206
+  ],
+  "baseball": [
+    "emote-baseball",
+    7.254841
+  ],
+  "bashful": [
+    "emote-shy2",
+    4.989278
+  ],
+  "bike": [
+    "emote-sleigh",
+    11.333165
+  ],
+  "blow": [
+    "emote-headblowup",
+    11.667537
+  ],
+  "boo": [
+    "emote-boo",
+    4.501502
+  ],
+  "bow": [
+    "emote-bow",
+    3.344036
+  ],
+  "boxer": [
+    "emote-boxer",
+    5.555702
+  ],
+  "bunny": [
+    "emote-bunnyhop",
+    12.380685
+  ],
+  "charging": [
+    "emote-charging",
+    8.025079
+  ],
+  "cold": [
+    "emote-cold",
+    3.664348
+  ],
+  "confused": [
+    "emote-confused",
+    8.578827
+  ],
+  "creepycute": [
+    "emote-creepycute",
+    7.902453
+  ],
+  "curtsy": [
+    "emote-curtsy",
+    2.425714
+  ],
+  "cute": [
+    "emote-cute",
+    6.170464
+  ],
+  "cutey": [
+    "emote-cutey",
+    3.26032
+  ],
+  "dab": [
+    "emote-dab",
+    2.717871
+  ],
+  "death": [
+    "emote-death",
+    6.615967
+  ],
+  "death2": [
+    "emote-death2",
+    4.855549
+  ],
+  "deathdrop": [
+    "emote-deathdrop",
+    3.762728
+  ],
+  "disappear": [
+    "emote-disappear",
+    6.195985
+  ],
+  "disco": [
+    "emote-disco",
+    5.366973
+  ],
+  "ditzy": [
+    "emote-pose9",
+    4.583117
+  ],
+  "elbowbump": [
+    "emote-elbowbump",
+    3.799768
+  ],
+  "embarrassed": [
+    "emote-embarrassed",
+    7.414283
+  ],
+  "energyball": [
+    "emote-energyball",
+    7.575354
+  ],
+  "exasperated": [
+    "emote-exasperated",
+    2.367483
+  ],
+  "exasperatedb": [
+    "emote-exasperatedb",
+    2.722748
+  ],
+  "faint": [
+    "emote-fainting",
+    18.423499
+  ],
+  "fall": [
+    "emote-fail2",
+    6.475972
+  ],
+  "falling": [
+    "emote-fail1",
+    5.617942
+  ],
+  "fashion": [
+    "emote-fashionista",
+    5.606485
+  ],
+  "float": [
+    "emote-float",
+    8.995302
+  ],
+  "frog": [
+    "emote-frog",
+    14.55257
+  ],
+  "frustrated": [
+    "emote-frustrated",
+    5.584622
+  ],
+  "gangnam": [
+    "emote-gangnam",
+    7.275486
+  ],
+  "ghost": [
+    "emote-ghost-idle",
+    19.570492
+  ],
+  "ghostfloat": [
+    "emote-ghost-idle",
+    19.570492
+  ],
+  "gift": [
+    "emote-gift",
+    5.8
+  ],
+  "gravity": [
+    "emote-gravity",
+    8.955966
+  ],
+  "greedy": [
+    "emote-greedy",
+    4.639828
+  ],
+  "handshake": [
+    "emote-secrethandshake",
+    3.879024
+  ],
+  "handstand": [
+    "emote-handstand",
+    4.015678
+  ],
+  "happy": [
+    "emote-happy",
+    3.483462
+  ],
+  "harlem": [
+    "emote-harlemshake",
+    13.558597
+  ],
+  "hearteyes": [
+    "emote-hearteyes",
+    4.034386
+  ],
+  "heartfingers": [
+    "emote-heartfingers",
+    4.001974
+  ],
+  "heartshape": [
+    "emote-heartshape",
+    6.232394
+  ],
+  "hot": [
+    "emote-hot",
+    4.353037
+  ],
+  "hug": [
+    "emote-hug",
+    3.503262
+  ],
+  "hugyourself": [
+    "emote-hugyourself",
+    4.992751
+  ],
+  "hyped": [
+    "emote-hyped",
+    7.492423
+  ],
+  "iceskating": [
+    "emote-iceskating",
+    7.299156
+  ],
+  "jetpack": [
+    "emote-jetpack",
+    16.759457
+  ],
+  "judochop": [
+    "emote-judochop",
+    2.427442
+  ],
+  "jumpb": [
+    "emote-jumpb",
+    3.584234
+  ],
+  "kick": [
+    "emote-kicking",
+    4.867992
+  ],
+  "kiss": [
+    "emote-kiss",
+    2.387175
+  ],
+  "laugh": [
+    "emote-laughing2",
+    5.056641
+  ],
+  "laughing": [
+    "emote-laughing",
+    2.69161
+  ],
+  "levelup": [
+    "emote-levelup",
+    6.0545
+  ],
+  "looping": [
+    "emote-looping",
+    8
+  ],
+  "lust": [
+    "emote-lust",
+    4.655965
+  ],
+  "mani": [
+    "emote-maniac",
+    4.906886
+  ],
+  "model": [
+    "emote-model",
+    6.490173
+  ],
+  "monster-fail": [
+    "emote-monster_fail",
+    4.632708
+  ],
+  "moonwalk": [
+    "emote-gordonshuffle",
+    8.052307
+  ],
+  "nightfever": [
+    "emote-nightfever",
+    5.488424
+  ],
+  "ninja": [
+    "emote-ninjarun",
+    4.754721
+  ],
+  "panic": [
+    "emote-panic",
+    2.850966
+  ],
+  "peace": [
+    "emote-peace",
+    5.755004
+  ],
+  "peekaboo": [
+    "emote-peekaboo",
+    3.629867
+  ],
+  "pose1": [
+    "emote-pose1",
+    2.825795
+  ],
+  "pose10": [
+    "emote-pose10",
+    3.989871
+  ],
+  "pose3": [
+    "emote-pose3",
+    5.10562
+  ],
+  "pose5": [
+    "emote-pose5",
+    4.621532
+  ],
+  "pose6": [
+    "emote-pose6",
+    5.375124
+  ],
+  "pose7": [
+    "emote-pose7",
+    4.655283
+  ],
+  "pose8": [
+    "emote-pose8",
+    4.808806
+  ],
+  "proposing": [
+    "emote-proposing",
+    4.27888
+  ],
+  "punk": [
+    "emote-punkguitar",
+    9.365807
+  ],
+  "puppet": [
+    "emote-puppet",
+    16.325823
+  ],
+  "rainbow": [
+    "emote-rainbow",
+    2.813373
+  ],
+  "robot": [
+    "emote-robot",
+    7.607362
+  ],
+  "rofl": [
+    "emote-rofl",
+    6.314731
+  ],
+  "roll": [
+    "emote-roll",
+    3.560517
+  ],
+  "ropepull": [
+    "emote-ropepull",
+    8.769656
+  ],
+  "run": [
+    "emote-superrun",
+    6.273226
+  ],
+  "sad": [
+    "emote-sad",
+    5.411073
+  ],
+  "shrink": [
+    "emote-shrink",
+    8.738784
+  ],
+  "shy": [
+    "emote-shy",
+    4.477567
+  ],
+  "slap": [
+    "emote-slap",
+    2.724945
+  ],
+  "smooch": [
+    "emote-kissing-bound",
+    10
+  ],
+  "snake": [
+    "emote-snake",
+    5.262578
+  ],
+  "snowangel": [
+    "emote-snowangel",
+    6.218627
+  ],
+  "snowball": [
+    "emote-snowball",
+    5.230467
+  ],
+  "split": [
+    "emote-splitsdrop",
+    4.46931
+  ],
+  "suckthumb": [
+    "emote-suckthumb",
+    4.185944
+  ],
+  "suii": [
+    "emote-celebrationstep",
+    3.353703
+  ],
+  "sumo": [
+    "emote-sumo",
+    10.868834
+  ],
+  "superpose": [
+    "emote-superpose",
+    4.530791
+  ],
+  "superpunch": [
+    "emote-superpunch",
+    3.751054
+  ],
+  "swordfight": [
+    "emote-swordfight",
+    5.914365
+  ],
+  "tapdance": [
+    "emote-tapdance",
+    11.057294
+  ],
+  "telekinesis": [
+    "emote-telekinesis",
+    10.492032
+  ],
+  "teleporting": [
+    "emote-teleporting",
+    11.7676
+  ],
+  "theatrical": [
+    "emote-theatrical",
+    8.591869
+  ],
+  "think": [
+    "emote-think",
+    3.691104
+  ],
+  "timejump": [
+    "emote-timejump",
+    4.007305
+  ],
+  "tired": [
+    "emote-tired",
+    4.61063
+  ],
+  "wave": [
+    "emote-wave",
+    2.690873
+  ],
+  "wings": [
+    "emote-wings",
+    13.134487
+  ],
+  "zombierun": [
+    "emote-zombierun",
+    9.182984
+  ],
+  "aerobics": [
+    "dance-aerobics",
+    8.796402
+  ],
+  "anime": [
+    "dance-anime",
+    8.46671
+  ],
+  "blackpink": [
+    "dance-blackpink",
+    7.150958
+  ],
+  "creepypuppet": [
+    "dance-creepypuppet",
+    6.416121
+  ],
+  "duckwalk": [
+    "dance-duckwalk",
+    11.748784
+  ],
+  "employee": [
+    "dance-employee",
+    8
+  ],
+  "handsup": [
+    "dance-handsup",
+    22.283413
+  ],
+  "icecream": [
+    "dance-icecream",
+    14.769573
+  ],
+  "jinglebell": [
+    "dance-jinglebell",
+    10.958832
+  ],
+  "kawai": [
+    "dance-kawai",
+    10.290789
+  ],
+  "macarena": [
+    "dance-macarena",
+    12.214141
+  ],
+  "metal": [
+    "dance-metal",
+    15.076377
+  ],
+  "orange": [
+    "dance-orangejustice",
+    6.475263
+  ],
+  "pennywise": [
+    "dance-pennywise",
+    4.214349
+  ],
+  "penguin": [
+    "dance-pinguin",
+    11.58291
+  ],
+  "russian": [
+    "dance-russian",
+    10.252905
+  ],
+  "sexy": [
+    "dance-sexy",
+    12.30883
+  ],
+  "shoppingcart": [
+    "dance-shoppingcart",
+    4.316035
+  ],
+  "singleladies": [
+    "dance-singleladies",
+    21.191372
+  ],
+  "smoothwalk": [
+    "dance-smoothwalk",
+    6.690023
+  ],
+  "tiktok10": [
+    "dance-tiktok10",
+    8.225648
+  ],
+  "tiktok2": [
+    "dance-tiktok2",
+    10.392353
+  ],
+  "tiktok8": [
+    "dance-tiktok8",
+    11
+  ],
+  "tiktok9": [
+    "dance-tiktok9",
+    11.892918
+  ],
+  "touch": [
+    "dance-touch",
+    11.7
+  ],
+  "vogue": [
+    "dance-voguehands",
+    9.150634
+  ],
+  "weird": [
+    "dance-weird",
+    21.556237
+  ],
+  "wrong": [
+    "dance-wrong",
+    12.422389
+  ],
+  "zombie": [
+    "dance-zombie",
+    12.922772
+  ],
+  "hipshake": [
+    "dance-hipshake",
+    12.8
+  ],
+  "aerobics-loop": [
+    "idle-loop-aerobics",
+    8.507535
+  ],
+  "angry-idle": [
+    "idle-angry",
+    25.427848
+  ],
+  "annoyed": [
+    "idle-loop-annoyed",
+    17.058522
+  ],
+  "attentive": [
+    "idle_layingdown",
+    24.585168
+  ],
+  "chilling": [
+    "idle-loop-happy",
+    18.798322
+  ],
+  "cozy": [
+    "idle-floorsleeping",
+    13.935264
+  ],
+  "cozynap": [
+    "idle-floorsleeping",
+    13.935264
+  ],
+  "dance-casual": [
+    "idle-dance-casual",
+    9.079756
+  ],
+  "dance-headbobbing": [
+    "idle-dance-headbobbing",
+    25.367458
+  ],
+  "enthused": [
+    "idle-enthusiastic",
+    15.941537
+  ],
+  "exercise": [
+    "idle-loop-aerobics",
+    8.507535
+  ],
+  "fighter": [
+    "idle-fighter",
+    17.19123
+  ],
+  "floating": [
+    "idle-floating",
+    27.791175
+  ],
+  "guitar": [
+    "idle-guitar",
+    13.229398
+  ],
+  "hero-idle": [
+    "idle-hero",
+    21.877099
+  ],
+  "laid": [
+    "sit-open",
+    26.025963
+  ],
+  "laidback": [
+    "sit-open",
+    26.025963
+  ],
+  "nervous": [
+    "idle-nervous",
+    21.714221
+  ],
+  "ponder": [
+    "idle-lookup",
+    22.339865
+  ],
+  "posh": [
+    "idle-posh",
+    21.851256
+  ],
+  "pouty": [
+    "idle-sad",
+    24.377214
+  ],
+  "relax": [
+    "idle_layingdown2",
+    21.546653
+  ],
+  "relaxing": [
+    "idle-floorsleeping2",
+    17.253372
+  ],
+  "repose": [
+    "sit-relaxed",
+    29.889858
+  ],
+  "sad-loop": [
+    "idle-loop-sad",
+    6.052999
+  ],
+  "sayso": [
+    "idle-dance-tiktok4",
+    15.500708
+  ],
+  "shy-loop": [
+    "idle-loop-shy",
+    16.47449
+  ],
+  "singing": [
+    "idle_singing",
+    13.791175
+  ],
+  "sit": [
+    "idle-loop-sitfloor",
+    22.321055
+  ],
+  "sleep": [
+    "idle-sleep",
+    22.620446
+  ],
+  "tapdance-loop": [
+    "idle-loop-tapdance",
+    6.261593
+  ],
+  "tiktok7": [
+    "idle-dance-tiktok7",
+    12.956484
+  ],
+  "tired-loop": [
+    "idle-loop-tired",
+    21.959007
+  ],
+  "toilet": [
+    "idle-toilet",
+    32.174447
+  ],
+  "uwu": [
+    "idle-uwu",
+    24.761968
+  ],
+  "wild": [
+    "idle-wild",
+    26.422824
+  ],
+  "zombie-idle": [
+    "idle_zombie",
+    28.754937
+  ],
+  "angry": [
+    "emoji-angry",
+    5.760023
+  ],
+  "arrogance": [
+    "emoji-arrogance",
+    6.869441
+  ],
+  "celebrate": [
+    "emoji-celebrate",
+    3.412258
+  ],
+  "clapping": [
+    "emoji-clapping",
+    2.161757
+  ],
+  "crying": [
+    "emoji-crying",
+    3.696499
+  ],
+  "cursing": [
+    "emoji-cursing",
+    2.382069
+  ],
+  "dizzy": [
+    "emoji-dizzy",
+    4.053049
+  ],
+  "eyeroll": [
+    "emoji-eyeroll",
+    3.020264
+  ],
+  "flex": [
+    "emoji-flex",
+    2.099351
+  ],
+  "gagging": [
+    "emoji-gagging",
+    5.500202
+  ],
+  "ghosts": [
+    "emoji-ghost",
+    3.472759
+  ],
+  "give-up": [
+    "emoji-give-up",
+    5.407888
+  ],
+  "hadoken": [
+    "emoji-hadoken",
+    2.723709
+  ],
+  "halo": [
+    "emoji-halo",
+    5.837754
+  ],
+  "lying": [
+    "emoji-lying",
+    6.313748
+  ],
+  "mind-blown": [
+    "emoji-mind-blown",
+    2.397167
+  ],
+  "naughty": [
+    "emoji-naughty",
+    4.277602
+  ],
+  "poke": [
+    "emoji-there",
+    2.059095
+  ],
+  "pray": [
+    "emoji-pray",
+    4.503179
+  ],
+  "punch": [
+    "emoji-punch",
+    1.755783
+  ],
+  "scared": [
+    "emoji-scared",
+    3.008487
+  ],
+  "sick": [
+    "emoji-sick",
+    5.070367
+  ],
+  "smirking": [
+    "emoji-smirking",
+    4.823158
+  ],
+  "sneeze": [
+    "emoji-sneeze",
+    2.996694
+  ],
+  "stinky": [
+    "emoji-poop",
+    4.795735
+  ],
+  "thumb": [
+    "emoji-thumbsup",
+    2.702369
+  ],
+  "tough": [
+    "idle_tough",
+    15.69
+  ],
+  "disappointed": [
+    "emote-receive-disappointed",
+    6.46
+  ],
+  "laid2": [
+    "sit-idle-sleep",
+    17.26
+  ],
+  "coolguy": [
+    "emote-coolguy",
+    3.92
+  ]
+}

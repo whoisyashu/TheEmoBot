@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "highrise-js-sdk": "^2.2.0",
+    "highrise.sdk": "^1.1.7",
+    "highrise.sdk.dev": "^2.4.0",
+    "nodemon": "^3.1.11",
+    "yt-dlp-wrap": "^2.3.12"
+  },
+  "name": "bots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "nodemon bot.js",
+    "radio": "nodemon radio.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
