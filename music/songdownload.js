@@ -13,16 +13,24 @@ module.exports = function triggerDownload(songName) {
     const output = path.join(DOWNLOAD_DIR, filename);
 
     const args = [
-      "ytsearch5:" + songName,
-      "--no-playlist",
-      "--user-agent", "Mozilla/5.0",
-      "--match-filter", "duration < 720",
-      "-x",
-      "--audio-format", "mp3",
-      "--no-write-thumbnail",
-      "--no-write-info-json",
-      "-o", output
-    ];
+  "ytsearch5:" + songName,
+
+  "--extractor-args",
+  "youtube:player_client=web;piped_instance=https://piped.video",
+
+  "--no-playlist",
+  "--user-agent", "Mozilla/5.0",
+  "--match-filter", "duration < 720",
+
+  "-x",
+  "--audio-format", "mp3",
+
+  "--no-write-thumbnail",
+  "--no-write-info-json",
+
+  "-o", output
+];
+
 
     console.log("yt-dlp", args.join(" "));
 
