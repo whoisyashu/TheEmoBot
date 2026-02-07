@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "express": "^5.2.1",
     "highrise-js-sdk": "^2.2.0",
     "highrise.sdk": "^1.1.7",
     "highrise.sdk.dev": "^2.4.0",
