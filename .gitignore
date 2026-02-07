@@ -1,0 +1,5 @@
+node_modules
+downloads
+music/downloads
+.env
+fallback/*.mp3

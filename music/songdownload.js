@@ -36,15 +36,11 @@ function downloadAudio(songName) {
 
 module.exports = async function triggerDownload(songName) {
   try {
-
     const file = await downloadAudio(songName);
-
-    console.log("Saved at:", file);
-    console.log("Downloaded!");
-
     return file;
-
   } catch (e) {
-    console.error(e);
+    console.error("Download failed:", songName);
+    return null;
   }
 };
+

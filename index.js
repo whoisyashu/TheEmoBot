@@ -10,6 +10,9 @@ const dance = require("./commands/dance");
 const emotes = require("./commands/emotes");
 const teleport = require("./commands/teleport");
 
+require("./radio/server");
+
+
 const bot = new Highrise({
   Events: [
     Events.Joins,

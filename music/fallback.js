@@ -1,39 +1,41 @@
 const fs = require("fs");
 const path = require("path");
 const state = require("../state");
-const streamToIcecast = require("./player");
-const { FALLBACK_DIR } = require("../config");
+const streamToRadio = require("./player");
+const triggerDownload = require("./songdownload");
 
-function randomFallback() {
-  const files = fs.readdirSync(FALLBACK_DIR).filter(f => f.endsWith(".mp3"));
-  return path.join(FALLBACK_DIR, files[Math.floor(Math.random() * files.length)]);
+let heartbeatStarted = false;
+
+// fallback search terms
+const FALLBACK_QUERIES = [
+  "lofi hindi radio",
+  "chill punjabi beats",
+  "bollywood instrumental",
+  "ambient study music",
+  "soft english acoustic"
+];
+
+function randomFallbackQuery() {
+  return FALLBACK_QUERIES[Math.floor(Math.random() * FALLBACK_QUERIES.length)];
 }
 
-function playUserSong(bot) {
+async function playUserSong(bot) {
   if (state.isPlaying) return;
 
   const next = state.songQueue.peek();
+
+  // no user songs → fallback
   if (!next) return playFallback(bot);
+
+  if (next.status !== "ready") return;
 
   const file = state.downloadCache.get(next.songName);
 
-  // DOWNLOAD FAILED OR NEVER ARRIVED
-  if (!file && next.status !== "ready") return;
-
-  // FILE MISSING ON DISK
-  if (!fs.existsSync(file)) {
-
+  if (!file || !fs.existsSync(file)) {
     state.songQueue.dequeue();
-    state.downloadCache.delete(next.songName);
-
-    const requester = next.user?.username || "Unknown";
-
-    bot.message.send(`❌ Could not play: ${next.songName}\n🙋 ${requester}, file not found. Skipping.`);
-
     return playUserSong(bot);
   }
 
-  // 🛑 STOP FALLBACK BEFORE USER SONG
   if (state.currentProcess) {
     state.currentProcess.kill("SIGINT");
     state.currentProcess = null;
@@ -49,9 +51,9 @@ function playUserSong(bot) {
   const cleanName = path.basename(file, ".mp3");
   const requester = next.user?.username || "Unknown";
 
-  bot.message.send(`🎵 Now playing: ${cleanName}\n🙋 Requested by: ${requester}`);
+  bot.message.send(`🎵 Now playing: ${cleanName}\n🙋 ${requester}`);
 
-  state.currentProcess = streamToIcecast(file);
+  state.currentProcess = streamToRadio(file);
 
   state.currentProcess.on("close", () => {
     state.isPlaying = false;
@@ -63,27 +65,35 @@ function playUserSong(bot) {
   });
 }
 
-
-function playFallback(bot) {
+async function playFallback(bot) {
   if (state.isPlaying || state.isFallbackPlaying) return;
 
   state.isFallbackPlaying = true;
 
-  const file = randomFallback();
+  const query = randomFallbackQuery();
+  console.log("Fallback query:", query);
 
-  state.currentSong = { songName: path.basename(file, ".mp3") };
+  const file = await triggerDownload(query);
+  if (!file) {
+    state.isFallbackPlaying = false;
+    return;
+  }
 
-  state.currentProcess = streamToIcecast(file);
+  state.currentSong = { songName: query };
+
+  state.currentProcess = streamToRadio(file);
 
   state.currentProcess.on("close", () => {
     state.isFallbackPlaying = false;
+    if (fs.existsSync(file)) fs.unlinkSync(file);
     playUserSong(bot);
   });
 }
 
 module.exports = bot => {
-  playFallback(bot);
+  if (heartbeatStarted) return;
+  heartbeatStarted = true;
 
-  // DJ heartbeat
+  playFallback(bot);
   setInterval(() => playUserSong(bot), 2000);
 };
