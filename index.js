@@ -35,4 +35,7 @@ dance(bot);
 emotes(bot);
 teleport(bot);
 
+console.log("ENV TOKEN:", process.env.HIGHRISE_TOKEN);
+console.log("TOKEN LENGTH:", process.env.HIGHRISE_TOKEN?.length);
+
 bot.login(TOKEN, ROOM);
