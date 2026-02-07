@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "highrise-js-sdk": "^2.2.0",
     "highrise.sdk": "^1.1.7",
