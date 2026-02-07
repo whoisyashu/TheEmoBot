@@ -1,9 +1,13 @@
 module.exports = {
-  token: "291e84c606bc23271e7655503b77373a449fa908c8c569f7fc4c47f71001c45f",
-  room: "697d61c4377254df22390999",
-  ICECAST_URL: "icecast://source:hackme@localhost:8000/live.mp3"
+  TOKEN : "process.env.HIGHRISE_TOKEN ",
+  ROOM : "process.env.ROOM_ID",
+
+  DANCE_ZONE: {
+    minX: 1.5,
+    maxX: 9.5,
+    minZ: 20.5,
+    maxZ: 28.5
+  },
+
+  FALLBACK_DIR: "./fallback"
 };
-
-const TOKEN = "291e84c606bc23271e7655503b77373a449fa908c8c569f7fc4c47f71001c45f";
-const ROOM = "697d61c4377254df22390999";
-
