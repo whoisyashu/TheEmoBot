@@ -1,46 +1,38 @@
-const { exec } = require("child_process");
-const fs = require("fs");
+const { spawn } = require("child_process");
 const path = require("path");
+const fs = require("fs");
 
-function downloadAudio(songName) {
-  return new Promise((resolve, reject) => {
+const DOWNLOAD_DIR = path.join(__dirname, "downloads");
+if (!fs.existsSync(DOWNLOAD_DIR)) fs.mkdirSync(DOWNLOAD_DIR);
 
-    const outputDir = path.join(__dirname, "downloads");
-    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
+module.exports = function triggerDownload(songName) {
 
-    // Snapshot files BEFORE download
-    const beforeFiles = fs.readdirSync(outputDir);
+  return new Promise(resolve => {
 
-    const cmd = `yt-dlp --js-runtimes node --cookies-from-browser firefox "ytsearch5:${songName}" -x --audio-format mp3 --match-filter "duration < 720" --no-write-thumbnail --no-write-info-json --no-playlist -o "${outputDir}/%(title)s.%(ext)s"`;
+    const filename = `${Date.now()}.mp3`;
+    const output = path.join(DOWNLOAD_DIR, filename);
 
-    exec(cmd, (err) => {
-      if (err) return reject(err);
+    const args = [
+      "ytsearch5:" + songName,
+      "--no-playlist",
+      "--user-agent", "Mozilla/5.0",
+      "--match-filter", "duration < 720",
+      "-x",
+      "--audio-format", "mp3",
+      "--no-write-thumbnail",
+      "--no-write-info-json",
+      "-o", output
+    ];
 
-      // Snapshot AFTER download
-      const afterFiles = fs.readdirSync(outputDir);
+    console.log("yt-dlp", args.join(" "));
 
-      // Find newly created mp3
-      const newFile = afterFiles.find(f =>
-        !beforeFiles.includes(f) && f.endsWith(".mp3")
-      );
+    const proc = spawn("yt-dlp", args);
 
-      if (!newFile) return reject("File not found");
+    proc.stderr.on("data", d => console.log(d.toString()));
 
-      const filePath = path.join(outputDir, newFile);
-
-
-      resolve(filePath);
+    proc.on("close", () => {
+      if (fs.existsSync(output)) resolve(output);
+      else resolve(null);
     });
   });
-}
-
-module.exports = async function triggerDownload(songName) {
-  try {
-    const file = await downloadAudio(songName);
-    return file;
-  } catch (e) {
-    console.error("Download failed:", songName);
-    return null;
-  }
 };
-
