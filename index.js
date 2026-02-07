@@ -1,4 +1,5 @@
 const { Highrise, Events } = require("highrise.sdk.dev");
+require("dotenv").config();
 const { TOKEN, ROOM } = require("./config");
 
 const ready = require("./handlers/ready");
@@ -11,6 +12,8 @@ const emotes = require("./commands/emotes");
 const teleport = require("./commands/teleport");
 
 require("./radio/server");
+
+
 
 
 const bot = new Highrise({
