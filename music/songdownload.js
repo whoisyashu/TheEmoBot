@@ -11,7 +11,7 @@ function downloadAudio(songName) {
     // Snapshot files BEFORE download
     const beforeFiles = fs.readdirSync(outputDir);
 
-    const cmd = `yt-dlp --js-runtimes node --cookies-from-browser firefox "ytsearch1:${songName}" -x --audio-format mp3 --match-filter "duration < 720" --no-write-thumbnail --no-write-info-json --no-playlist -o "${outputDir}/%(title)s.%(ext)s"`;
+    const cmd = `yt-dlp --js-runtimes node --cookies-from-browser firefox "ytsearch5:${songName}" -x --audio-format mp3 --match-filter "duration < 720" --no-write-thumbnail --no-write-info-json --no-playlist -o "${outputDir}/%(title)s.%(ext)s"`;
 
     exec(cmd, (err) => {
       if (err) return reject(err);
